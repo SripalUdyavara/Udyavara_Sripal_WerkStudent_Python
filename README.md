@@ -22,12 +22,12 @@ This tool is designed to efficiently extract key data from invoice PDFs, such as
      ./script
      ```
 3. After running the tool:
-   - Open `invoice_data.xlsx` or `invoice_data.csv` in the same folder to view the extracted results.
+   - Open `Invoice_Data.xlsx` or `Invoice_Data.csv` in the same folder to view the extracted results.
 
 ## Technical Overview
 
 1. **PDF Processing**: The tool reads PDF invoices, extracting data associated with labels like "Invoice Date" and values such as "Gross Amount incl. VAT".
-2. **Flexible Date Handling**: It recognizes both German (e.g., "01.03.2024") and English (e.g., "Nov 26, 2016") date formats.
+2. **Flexible Date Handling**: It recognizes both German (e.g., "1. März 2024") and English (e.g., "Nov 26, 2016") date formats.
 3. **Easy-to-Use Output**:
    - **Excel File**: Provides two sheets—one with raw data and the other with a pivot table summary for easy analysis.
    - **CSV File**: Generates a straightforward CSV file for further data manipulation or export.
