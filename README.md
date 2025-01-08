@@ -1,79 +1,47 @@
+# PDF Invoice Data Extraction Tool
 
-# WerkStudent_Python
+This tool is designed to efficiently extract key data from invoice PDFs, such as dates and labeled values, and save the results into structured Excel and CSV files. It simplifies the process of extracting invoice details, making it useful for businesses looking to automate and streamline invoice processing.
 
-## Overview
+## Features
 
-This repository contains the interview task for the WerkStudent position in Python. The goal is to collect data from three sample invoices, create an Excel file with two sheets, and generate a CSV file. Additionally, an executable file should be provided to run the code.
+- **Extracts Key Data**: Extracts information like invoice dates (e.g., "Invoice Date") and associated values (e.g., "Gross Amount incl. VAT", "Total").
+- **Supports Multiple Formats**: Handles both table-based and text-based invoice formats. It can process dates in German and English formats.
+- **Data Output**: Saves extracted data in two formats for easy analysis:
+  - **Excel File** (`invoice_data.xlsx`):
+    - **Sheet 1**: Contains three columns: "File Name", "Date", and "Value".
+    - **Sheet 2**: Includes a pivot table that summarizes data by "Date", "Value", and "File Name".
+  - **CSV File** (`invoice_data.csv`): A simple and structured CSV file containing all the extracted data.
 
-## Task Details
+## How to Use
 
-1. **Data Extraction**:
-    - Extract specific values from three sample invoices.
-    - For Sample 1, extract the value shown in the provided image.
-    - <img width="289" alt="image" src="https://github.com/user-attachments/assets/0cf000ff-c305-4ffe-beb4-1c02a04d06b6" />
-    - For Samples 2, extract the value shown in the provided image.
-    - <img width="497" alt="image" src="https://github.com/user-attachments/assets/ea6eb368-604d-4dd4-9235-fbc8ec36d275" />
+1. Place your invoice PDFs (e.g., `sample_invoice_1.pdf`, `sample_invoice_2.pdf`) in the same folder as the tool.
+2. Run the executable file:
+   - On **Windows**: Double-click `script.exe`.
+   - On **Mac/Linux**: Open the terminal, navigate to the folder containing the tool, and run:
+     ```bash
+     ./script
+     ```
+3. After running the tool:
+   - Open `invoice_data.xlsx` or `invoice_data.csv` in the same folder to view the extracted results.
 
-2. **Excel File Creation**:
-    - Create an Excel file with two sheets:
-        - **Sheet 1**: Contains three columns - File Name, Date (scraped from the document), and Value.
-        - **Sheet 2**: Contains a pivot table with the date and value sum, and also by document name.
+## Technical Overview
 
-3. **CSV File Creation**:
-    - Create a CSV file with all the data, including headers, and use a semicolon (;) as the separator.
+1. **PDF Processing**: The tool reads PDF invoices, extracting data associated with labels like "Invoice Date" and values such as "Gross Amount incl. VAT".
+2. **Flexible Date Handling**: It recognizes both German (e.g., "01.03.2024") and English (e.g., "Nov 26, 2016") date formats.
+3. **Easy-to-Use Output**:
+   - **Excel File**: Provides two sheets—one with raw data and the other with a pivot table summary for easy analysis.
+   - **CSV File**: Generates a straightforward CSV file for further data manipulation or export.
 
-4. **Executable File**:
-    - Provide an executable file (.exe) that can run the code if the files are in the same folder.
+## System Requirements
 
-5. **Fork Creation**:
-    - Create a fork of this repository named `LastName_FirstName_WerkStudent_Python` (e.g., `Shovon_Golam_WerkStudent_Python`).
-    - Upload your code to this branch. No need to submit a pull request; the fork will be checked directly.
+No programming knowledge is required! The tool is designed to be user-friendly and easy to run.
 
-6. **Documentation**:
-    - Include an explanation in the README file that a non-technical person can understand.
-    - Ensure the code is documented so that a technical person can understand it.
-
-7. **Problem Reporting**:
-    - If you face any problems or find it impossible to complete a task, document the issue in the README file of your branch. Explain what the problem was and why you were unable to complete it.
-
-
-## How It Works
-
-1. **Data Extraction**:
-    - The script reads the sample invoices and extracts the required values.
-    - The extracted data is stored in variables for further processing.
-
-2. **Excel File Creation**:
-    - The script creates an Excel file with two sheets.
-    - Sheet 1 contains the file name, extracted data, and value.
-    - Sheet 2 contains a pivot table summarizing the data by date and document name.
-
-3. **CSV File Creation**:
-    - The script generates a CSV file with the extracted data, including headers, and uses a semicolon as the separator.
-
-4. **Executable File**:
-    - An executable file is provided to run the entire code. Ensure the sample invoices are in the same folder as the executable file.
-
-5. **Requirements File**:
-    -A requirements.txt file is included to create the environment needed to run the code
-
-## Running the Code
-
-1. Place the sample invoices in the same folder as the executable file.
-2. Run the executable file to execute the code and generate the Excel and CSV files.
-
-
-## Documentation
-
-- The README file contains a non-technical explanation of the code.
-- The code is documented with comments to help technical users understand its functionality.
-
-## Problem Reporting
-
-- If you face any problems or find it impossible to complete a task, document the issue in the README file of your branch. Explain what the problem was and why you were unable to complete it.
-
-## Timeline
-
-- The time limit for this task is 9 January 2025. 
-
-
+- **Python 3.6+** (optional if running the Python script).
+- The following Python libraries must be installed if running the Python script:
+  - `pdfplumber`
+  - `pandas`
+  - `openpyxl`
+  
+  You can install the necessary dependencies using:
+  ```bash
+  pip install -r requirements.txt
