@@ -7,10 +7,10 @@ This tool is designed to efficiently extract key data from invoice PDFs, such as
 - **Extracts Key Data**: Extracts information like invoice dates (e.g., "Invoice Date") and associated values (e.g., "Gross Amount incl. VAT", "Total").
 - **Supports Multiple Formats**: Handles both table-based and text-based invoice formats. It can process dates in German and English formats.
 - **Data Output**: Saves extracted data in two formats for easy analysis:
-  - **Excel File** (`invoice_data.xlsx`):
+  - **Excel File** (`Invoice_Data.xlsx`):
     - **Sheet 1**: Contains three columns: "File Name", "Date", and "Value".
     - **Sheet 2**: Includes a pivot table that summarizes data by "Date", "Value", and "File Name".
-  - **CSV File** (`invoice_data.csv`): A simple and structured CSV file containing all the extracted data.
+  - **CSV File** (`Invoice_Data.csv`): A simple and structured CSV file containing all the extracted data.
 
 ## How to Use
 
@@ -33,8 +33,6 @@ This tool is designed to efficiently extract key data from invoice PDFs, such as
    - **CSV File**: Generates a straightforward CSV file for further data manipulation or export.
 
 ## System Requirements
-
-No programming knowledge is required! The tool is designed to be user-friendly and easy to run.
 
 - **Python 3.6+** (optional if running the Python script).
 - The following Python libraries must be installed if running the Python script:
