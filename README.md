@@ -14,14 +14,15 @@ This tool is designed to efficiently extract key data from invoice PDFs, such as
 
 ## How to Use
 
-1. Place your invoice PDFs (e.g., `sample_invoice_1.pdf`, `sample_invoice_2.pdf`) in the same folder as the tool.
-2. Run the executable file:
+1. Download the zip file containing the executable and necessary PDFs from the [First Release](https://github.com/SripalUdyavara/Udyavara_Sripal_WerkStudent_Python/releases/tag/FirstRelease) section of the GitHub repository.
+2. Extract the contents of the zip file to a folder on your computer.
+3. Run the executable file:
    - On **Windows**: Double-click `script.exe`.
    - On **Mac/Linux**: Open the terminal, navigate to the folder containing the tool, and run:
      ```bash
      ./script
      ```
-3. After running the tool:
+4. After running the tool:
    - Open `Invoice_Data.xlsx` or `Invoice_Data.csv` in the same folder to view the extracted results.
 
 ## Technical Overview
@@ -39,7 +40,8 @@ This tool is designed to efficiently extract key data from invoice PDFs, such as
   - `pdfplumber`
   - `pandas`
   - `openpyxl`
-  
+
   You can install the necessary dependencies using:
   ```bash
   pip install -r requirements.txt
+  ```
