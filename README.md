@@ -14,7 +14,7 @@ This tool is designed to efficiently extract key data from invoice PDFs, such as
 
 ## How to Use
 
-1. Download the zip file containing the executable and necessary PDFs from the [First Release](https://github.com/SripalUdyavara/Udyavara_Sripal_WerkStudent_Python/releases/tag/FirstRelease) section of the GitHub repository.
+1. Download the script.zip file containing the executable and necessary PDFs from the [First Release](https://github.com/SripalUdyavara/Udyavara_Sripal_WerkStudent_Python/releases/tag/v1.0.0) section of the GitHub repository.
 2. Extract the contents of the zip file to a folder on your computer.
 3. Run the executable file:
    - On **Windows**: Double-click `script.exe`.
